@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: String, currentPage: String)(content: Html)
 
 <!DOCTYPE html>
 <html>
@@ -41,6 +41,21 @@
     <div class="container">
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
+                @for(p <- List(
+                    ("index", "two15"),
+                    ("cityhall", "ring"),
+                    ("church","church"),
+                    ("cocktail","drink3"),
+                    ("food", "covered3"),
+                    ("party", "mirrors"),
+                    ("hotels", "sleeping"),
+                    ("brunch", "food3"),
+                    ("honeymoon", "travel2")
+                )) {
+                <li><a href="@(p._1).html" @if(p._1 == currentPage) {class="anchorLink"}><i class="flaticon-@(p._2)"> </i></a> </li>
+                }
+                <!--
+
                 <li><a href="index.html" class="anchorLink"><i class="flaticon-two15"> </i></a> </li>
                 <li><a href="index.html"><i class="flaticon-ring"> </i></a> </li>
                 <li><a href="index.html"><i class="flaticon-church"> </i></a> </li>
@@ -49,7 +64,7 @@
                 <li><a href="about.html"><i class="flaticon-mirrors"> </i></a></li>
                 <li><a href="photos.html"><i class="flaticon-sleeping"> </i></a></li>
                 <li><a href="wedding.html"><i class="flaticon-food3"> </i></a></li>
-                <li><a href="wedding.html"><i class="flaticon-travel2"> </i></a></li>
+                <li><a href="wedding.html"><i class="flaticon-travel2"> </i></a></li>-->
             </ul>
         </nav>
     </div>
@@ -89,7 +104,7 @@
 <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.js"))'></script>
 <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("html5shiv.min.js"))'></script>
 <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("respond.min.js"))'></script>
-<script type='text/javascript' src='@routes.Assets.at("javascripts/jquery.flexslider-min.js")'></script>
+<script type='text/javascript' src='@routes.Assets.at("javascripts/jquery.flexslider.min.js")'></script>
 <script type='text/javascript' src='@routes.Assets.at("javascripts/jquery.anchor.min.js")'></script>
 <script type='text/javascript' src='@routes.Assets.at("javascripts/custom.min.js")'></script>
 </body>

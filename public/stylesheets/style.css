@@ -112,9 +112,9 @@ hr{
 	background:#cb1e08;
 }
 
-.navbar-toggle:hover{
+/*.navbar-toggle:hover{
 	background:#b41a06 !important;
-}
+}*/
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border-color: #e9331b;
@@ -158,9 +158,9 @@ hr{
 }
 
 .navbar-default .navbar-nav>li>a:hover{
-	color: #fff;
-	/*background:#e9331b;*/
-	background:rgb(119, 117, 128)
+	color: rgb(119, 117, 128);
+	/*background:#e9331b;
+	background:rgb(119, 117, 128)*/
 }
 
 /* Main */
