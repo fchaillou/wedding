@@ -1,21 +1,7 @@
-@main("Welcome to Play Framework", "index") {
+@(message: String)
 
-<div class="row">
-    <div class="col-md-8 col-sm-7">
-        <div class="main-invite">
-            <div class="signal"><i class="icon-signal"></i>	 <span>Marriage On</span></div>
-            <h1>We're<br>
-                getting married</h1>
-            <p>Sed consequat massa vel sagittis pharetra. Morbi sed orci non erat hendrerit ultrices. Aliquam eget adipiscing sem, in auctor magna. Nulla ut sodales risus. Aliquam ut vulputate.</p>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-5">
-        <div class="main-date">
-            <i class="icon-heart"></i>
-            <div class="date"><span class="month"><strong>12,DEC</strong></span><br><span class="year"><strong>2012</strong></span></div>
-        </div>
-    </div>
-</div>
-<a name="about" id="about"></a>
+@main("Welcome to Play") {
+
+    @play20.welcome(message)
 
 }

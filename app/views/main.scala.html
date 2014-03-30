@@ -1,114 +1,15 @@
-@(title: String, currentPage: String)(content: Html)
+@(title: String)(content: Html)
 
 <!DOCTYPE html>
+
 <html>
-<head>
-    <title>@title</title>
-    <!-- Description, Keywords and Author
-    <meta name="description" content="Your description">
-    <meta name="keywords" content="Your,Keywords">
-    <meta name="author" content="ResponsiveWebInc">-->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
-
-
-    <link rel='shortcut icon' type='image/png' href='@routes.Assets.at("images/favicon.png")'>
-    <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.css"))'>
-    <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("font-awesome.min.css"))'>
-    <link rel='stylesheet' href='@routes.Assets.at("stylesheets/flaticon.css")'>
-    <link rel='stylesheet' href='@routes.Assets.at("stylesheets/flexslider.css")'>
-    <link rel='stylesheet' href='@routes.Assets.at("stylesheets/style.css")'>
-</head>
-
-<body>
-<!-- Navigation Starts -->
-<div id="nav" class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Anne-Laure &amp; Fabien se marient</a>
-        </div>
-    </div>
-
-    <div class="container">
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-            <ul class="nav navbar-nav">
-                @for(p <- List(
-                    ("index", "two15"),
-                    ("cityhall", "ring"),
-                    ("church","church"),
-                    ("cocktail","drink3"),
-                    ("food", "covered3"),
-                    ("party", "mirrors"),
-                    ("hotels", "sleeping"),
-                    ("brunch", "food3"),
-                    ("honeymoon", "travel2")
-                )) {
-                <li><a href="@(p._1).html" @if(p._1 == currentPage) {class="anchorLink"}><i class="flaticon-@(p._2)"> </i></a> </li>
-                }
-                <!--
-
-                <li><a href="index.html" class="anchorLink"><i class="flaticon-two15"> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-ring"> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-church"> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-drink3  "> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-covered3"> </i></a> </li>
-                <li><a href="about.html"><i class="flaticon-mirrors"> </i></a></li>
-                <li><a href="photos.html"><i class="flaticon-sleeping"> </i></a></li>
-                <li><a href="wedding.html"><i class="flaticon-food3"> </i></a></li>
-                <li><a href="wedding.html"><i class="flaticon-travel2"> </i></a></li>-->
-            </ul>
-        </nav>
-    </div>
-</div>
-
-
-<a name="home" id="home"></a>
-<!-- Navigation Ends -->
-
-<!-- Main Starts -->
-<div class="main">
-    <div class="container">
-      @content
-    </div>
-</div>
-<!-- Main Ends -->
-
-<!--Footer Starts -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="copy">
-                    <!-- This theme comes with Creative Commons Attribution 3.0 Unported license. So you should not remove the footer link. -->
-                    Copyright 2013 &copy; <a href="http://responsivewebinc.com/bootstrap-themes">Bootstrap Themes</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Footer Ends -->
-<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
-
-
-<!-- Javascript files -->
-<script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))'></script>
-<script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.js"))'></script>
-<script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("html5shiv.min.js"))'></script>
-<script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("respond.min.js"))'></script>
-<script type='text/javascript' src='@routes.Assets.at("javascripts/jquery.flexslider.min.js")'></script>
-<script type='text/javascript' src='@routes.Assets.at("javascripts/jquery.anchor.min.js")'></script>
-<script type='text/javascript' src='@routes.Assets.at("javascripts/custom.min.js")'></script>
-</body>
-</html>
-   </div>
-</body>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        @content
+    </body>
 </html>
