@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@title</title>
+    <title>@title - Anne-Laure & Fabien</title>
     <!-- Description, Keywords and Author
     <meta name="description" content="Your description">
     <meta name="keywords" content="Your,Keywords">
@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Anne-Laure &amp; Fabien se marient</a>
+            <a class="navbar-brand" href="/">Anne-Laure &amp; Fabien se marient</a>
         </div>
     </div>
 
@@ -42,29 +42,18 @@
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
                 @for(p <- List(
-                    ("index", "two15"),
-                    ("cityhall", "ring"),
-                    ("church","church"),
-                    ("cocktail","drink3"),
-                    ("food", "covered3"),
-                    ("party", "mirrors"),
-                    ("hotels", "sleeping"),
-                    ("brunch", "food3"),
-                    ("honeymoon", "travel2")
+                    ("story", "two15", "Nous"),
+                    ("cityhall", "ring", "Mairie"),
+                    ("church","church", "Eglise"),
+                    ("cocktail","drink3", "Cocktail"),
+                    ("food", "covered3", "Repas"),
+                    ("party", "mirrors", "Boom"),
+                    ("hotels", "sleeping", "Hotels"),
+                    ("brunch", "food3", "Brunch"),
+                    ("honeymoon", "travel2", "Voyage")
                 )) {
-                <li><a href="@(p._1).html" @if(p._1 == currentPage) {class="anchorLink"}><i class="flaticon-@(p._2)"> </i></a> </li>
+                <li><a @if(p._1 == currentPage) {class="anchorLink" } else { href="@(p._1).html" }><i class="flaticon-@(p._2)"> </i><br/>@(p._3)</a> </li>
                 }
-                <!--
-
-                <li><a href="index.html" class="anchorLink"><i class="flaticon-two15"> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-ring"> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-church"> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-drink3  "> </i></a> </li>
-                <li><a href="index.html"><i class="flaticon-covered3"> </i></a> </li>
-                <li><a href="about.html"><i class="flaticon-mirrors"> </i></a></li>
-                <li><a href="photos.html"><i class="flaticon-sleeping"> </i></a></li>
-                <li><a href="wedding.html"><i class="flaticon-food3"> </i></a></li>
-                <li><a href="wedding.html"><i class="flaticon-travel2"> </i></a></li>-->
             </ul>
         </nav>
     </div>
@@ -75,11 +64,7 @@
 <!-- Navigation Ends -->
 
 <!-- Main Starts -->
-<div class="main">
-    <div class="container">
-      @content
-    </div>
-</div>
+@content
 <!-- Main Ends -->
 
 <!--Footer Starts -->

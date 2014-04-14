@@ -1,6 +1,15 @@
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /                    controllers.MainController.index
-GET     /index.html          controllers.MainController.index
-GET     /assets/*file        controllers.Assets.at(path="/public", file)
-GET     /webjars/*file       controllers.WebJarAssets.at(file)
+GET        /                      controllers.MainController.index
+GET        /story.html            controllers.MainController.story
+GET        /cityhall.html         controllers.MainController.cityhall
+GET        /church.html           controllers.MainController.church
+GET        /cocktail.html         controllers.MainController.cocktail
+GET        /food.html             controllers.MainController.food
+GET        /party.html            controllers.MainController.party
+GET        /hotels.html           controllers.MainController.hotels
+GET        /brunch.html           controllers.MainController.brunch
+GET        /honeymoon.html        controllers.MainController.honeymoon
+
+GET        /assets/*file          controllers.Assets.at(path="/public", file)
+GET        /webjars/*file         controllers.WebJarAssets.at(file)

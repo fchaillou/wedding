@@ -146,10 +146,15 @@ hr{
 	font-weight:bold;
 	text-transform:uppercase;
 	text-shadow:1px 1px 1px #222;
+    text-align: center;
 	padding-top:5px;
 	padding-bottom:10px;
 	padding-left:17px;
 	padding-right:17px;
+}
+
+.navbar-default .navbar-nav>li>a.anchorLink {
+    color: rgb(119, 117, 128);
 }
 
 .navbar-default .navbar-nav>li i {
@@ -264,7 +269,7 @@ hr{
 /* About */
 
 .about{
-	padding-top:20px;
+    padding-top:113px;
 	padding-bottom:20px;
 }
 
