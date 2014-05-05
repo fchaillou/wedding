@@ -69,6 +69,13 @@ hr{
 	color:444;
 }
 
+.title h5{
+	text-align:center;
+	font-family: 'Droid Serif', serif;
+	font-size:20px;
+	color:444;
+}
+
 .wedding .well a{
 	color:#8D559F;
 	/*color:#D32020;*/
@@ -269,18 +276,18 @@ hr{
 /* About */
 
 .about{
-    padding-top:113px;
-	padding-bottom:20px;
+    padding-top:73px;
+	padding-bottom:0px;
 }
 
 .about  p.about-para{
 	font-family: 'Droid Serif', serif;
 	font-style:italic;
-	font-size:17px;
-	line-height:30px;
+	font-size:16px;
+	line-height:20px;
 	/*color:#666;*/
 	color:#8D559F;
-	width:500px;
+	/*width:500px*/;
 	margin:0px auto;
 }
 
