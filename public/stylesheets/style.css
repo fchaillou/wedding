@@ -10,7 +10,7 @@ body{
 	font-size:13px;
 	line-height:20px;
 	padding-top:48px;
-	background:#ddd url('../img/back.png') repeat;
+	/*background:#ddd url('../img/back.png') repeat;*/
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -224,8 +224,8 @@ hr{
 	color:#222;
 	padding-top:0px;
 	font-weight:bold;
-	font-size:50px;
-	line-height:60px;
+	font-size:40px;
+	line-height:40px;
 	text-transform:uppercase;
 }
 
@@ -280,16 +280,34 @@ hr{
 	padding-bottom:0px;
 }
 
-.about  p.about-para{
+.city{
+    padding-top:93px;
+    padding-bottom:0px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+p.about-para{
 	font-family: 'Droid Serif', serif;
 	font-style:italic;
 	font-size:16px;
 	line-height:20px;
-	/*color:#666;*/
 	color:#8D559F;
-	/*width:500px*/;
 	margin:0px auto;
 }
+
+p.about-para-big{
+    font-family: 'Droid Serif', serif;
+    font-size:20px;
+    line-height:20px;
+    color:#8D559F;
+    margin:0px auto;
+}
+
 
 .about .groom h3{
 	text-align:center;
@@ -453,8 +471,8 @@ hr{
 	}
 
 	.main .main-invite h1{
-		font-size:40px;
-		line-height:50px;
+		font-size:30px;
+		line-height:40px;
 	}
 
 	.main .main-date i.icon-heart{
@@ -481,4 +499,19 @@ hr{
 	.about  p.about-para{
 		width:auto;
 	}
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text:align: center;
+    }
 }

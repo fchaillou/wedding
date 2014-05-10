@@ -46,10 +46,10 @@
                     ("cityhall", "ring", "Mairie"),
                     ("church","church", "Eglise"),
                     ("cocktail","drink3", "Cocktail"),
-                    ("food", "covered3", "Repas"),
-                    ("party", "mirrors", "Boom"),
+                    /*("food", "covered3", "Repas"),
+                    ("party", "mirrors", "Boom"),*/
                     ("hotels", "sleeping", "Hotels"),
-                    ("brunch", "food3", "Brunch"),
+                    /*("brunch", "food3", "Brunch"),*/
                     ("honeymoon", "travel2", "Voyage")
                 )) {
                 <li><a @if(p._1 == currentPage) {class="anchorLink" } else { href="@(p._1).html" }><i class="flaticon-@(p._2)"> </i><br/>@(p._3)</a> </li>
@@ -92,8 +92,5 @@
 <script type='text/javascript' src='@routes.Assets.at("javascripts/jquery.flexslider.min.js")'></script>
 <script type='text/javascript' src='@routes.Assets.at("javascripts/jquery.anchor.min.js")'></script>
 <script type='text/javascript' src='@routes.Assets.at("javascripts/custom.min.js")'></script>
-</body>
-</html>
-   </div>
 </body>
 </html>
