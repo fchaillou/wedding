@@ -52,7 +52,7 @@
                     /*("brunch", "food3", "Brunch"),*/
                     ("honeymoon", "travel2", "Voyage")
                 )) {
-                <li><a @if(p._1 == currentPage) {class="anchorLink" } else { href="@(p._1).html" }><i class="flaticon-@(p._2)"> </i><br/>@(p._3)</a> </li>
+                <li><a @if(p._1 == currentPage) {class="anchorLink" } else { href="@(p._1).html" }><i class="flaticon-@(p._2)"> </i><span class="wrap">@(p._3)</span></a> </li>
                 }
             </ul>
         </nav>

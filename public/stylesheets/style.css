@@ -108,7 +108,7 @@ hr{
 }
 
 .navbar-default .navbar-toggle {
-	border-color: #D32020;
+	border-color: rgb(119, 117, 128);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -116,48 +116,20 @@ hr{
 }
 
 .navbar-toggle{
-	background:#cb1e08;
+	background:rgb(119, 117, 128);
 }
-
-/*.navbar-toggle:hover{
-	background:#b41a06 !important;
-}*/
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	border-color: #e9331b;
-}
-
-.navbar-default .navbar-nav>li {
-    /*background: url("../flag-bg.png") no-repeat scroll -20px bottom transparent;*/
-    background-color: transparent;
-    background-image: url("../img/flag-bg.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: -20px bottom;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: auto auto;
+	border-color: rgb(119, 117, 128);
 }
 
 .navbar-default .navbar-nav>li>a {
-    background-color: transparent;
-    background-image: url("../img/flag-bg.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center bottom;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: auto auto;
-
 	color: #fff;
 	font-weight:bold;
 	text-transform:uppercase;
 	text-shadow:1px 1px 1px #222;
-    text-align: center;
-	padding-top:5px;
-	padding-bottom:10px;
-	padding-left:17px;
-	padding-right:17px;
+    text-align: left;
+	padding-bottom:5px;
 }
 
 .navbar-default .navbar-nav>li>a.anchorLink {
@@ -171,8 +143,6 @@ hr{
 
 .navbar-default .navbar-nav>li>a:hover{
 	color: rgb(119, 117, 128);
-	/*background:#e9331b;
-	background:rgb(119, 117, 128)*/
 }
 
 /* Main */
@@ -513,5 +483,46 @@ p.about-para-big{
         display: table-cell;
         float: none;
         text:align: center;
+    }
+
+    .navbar-default .navbar-nav>li {
+        /*background: url("../flag-bg.png") no-repeat scroll -20px bottom transparent;*/
+        background-color: transparent;
+        background-image: url("../img/flag-bg.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: -20px bottom;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        background-color: transparent;
+        background-image: url("../img/flag-bg.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center bottom;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+
+        color: #fff;
+        font-weight:bold;
+        text-transform:uppercase;
+        text-shadow:1px 1px 1px #222;
+        text-align: center;
+        padding-top:5px;
+        padding-bottom:10px;
+        padding-left:17px;
+        padding-right:17px;
+    }
+
+    span.wrap {
+        display: block;
+        white-space: -moz-pre-wrap;     /* Mozilla */
+        white-space: -pre-wrap;           /* Opera 4-6 */
+        white-space: -o-pre-wrap;        /* Opera 7 */
+        word-wrap: break-word;           /* IE5.5+ */
     }
 }
